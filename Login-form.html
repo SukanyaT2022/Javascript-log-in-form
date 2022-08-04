@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+   form{
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      height: auto;
+     margin: auto;
+     border: 2px solid green;
+     padding: 10px;
+   }
+
+   input{
+margin: 10px 0px;
+text-align: center;
+   }
+   h1{
+    text-align: center;   
+   }
+   button{
+       height: 50px;
+       margin-top: 10px;
+       /*background:linear-gradient(45deg,pink,lightblue);  45deg and to right give same result*/
+       background:linear-gradient(to right,pink,lightblue)    
+   }
+
+</style>
+<body>
+    <form>
+<h1>Log in form</h1>
+<input type="text" placeholder="Enter your username" id="user">
+<input type="password" placeholder="Enter your password" id="passcode">
+<input type="password" placeholder="Confirm your password" id="confirmPassword">
+
+<button id="check" onclick="login()">Submit</button>
+<input type="checkbox" onclick="showPassword(),showConfirmPassword() "><!--shgowpassword box-->
+
+    </form>
+    
+</body>
+<script src="log-in-form.js"></script>
+</html>
